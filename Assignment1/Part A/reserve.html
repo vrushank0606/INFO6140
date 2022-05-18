@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Internal css block  -->
+  <style>
+
+    .container {
+      padding: 20px;
+    }
+
+    header {
+      font-weight: bold;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+
+    .search {
+      font-weight: bold;
+      color: black;
+    }
+
+    input {
+      width: 40%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    select {
+      width: 40%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }    
+
+    button {
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+
+  </style>
+  <!-- Exit block  -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE KITCHEN PARTY</title>
+</head>
+<body>  
+  <div class="container">
+    <header>THE KITCHEN PARTY</header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="search" href="#">Reservations</a>
+    </nav>
+    <h3>Have an appetite for life and book a table now!!!</h3>
+    <br />
+    <form>
+      <div>
+        <label for="from">First Name:</label> <br/>
+        <input type="text" id="fname" name="fname" value=""><br>
+      </div>
+
+      <div>
+        <label for="to">Last Name:</label> <br/>
+        <input type="text" id="fname" name="fname" value=""><br>
+      </div>
+
+
+      <label for="reservation">Reservation Date</label> <br/>
+      <input type="date" id="reservation"> <br/>
+      
+      <div>
+        <label for="slots">Slots for Table</label> <br/>
+        <select name="slots">
+          <option value="table1">1 </option>
+          <option value="table2">2 </option>
+          <option value="table3">3 </option>
+          <option value="table4">4 </option>
+        </select> <br/>
+      </div>
+      <button type="submit">Reserve</button>
+    </form>
+    <footer>
+      &copy; <em id="date"></em>THE KITCHEN PARTY 2022
+    </footer>
+  </div>
+</body>
+</html>

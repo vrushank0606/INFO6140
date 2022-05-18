@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Internal css  block -->
+  <style>
+
+    .container {
+      padding: 20px;
+    }
+
+    header {
+      font-weight: bold;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+
+    .home {
+      font-weight: bold;
+      color: black;
+    }
+
+    .image_container {
+      display: flex;
+    }
+
+    .pasta_card {
+      margin-left:auto;
+      margin-right:auto;
+      height:auto; 
+      width:auto;
+    }
+
+    .city {
+      padding: 10px;
+      width: 215px;
+      height: 215px;
+      text-align: center;
+    }
+
+    .city_label {
+      padding: 100px;
+    }
+
+    .table-container {
+      margin: auto;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    footer {
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+
+  </style>
+  <!-- Exit block -->
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE KITCHEN PARTY - Part A</title>
+</head>
+<body>  
+  <div class="container">
+    <header>THE KITCHEN PARTY</header>
+    <nav>
+      <a class="home" href="#">Home</a>
+      <a href="reserve.html">Reservations</a>
+    </nav>
+    <h3>Life’s too short for boring food</h3>
+    <div class="image_container">
+      <div class="pasta_card">
+        <img name="Aglio Olio" class="city" src="images/Aglio_olio.jpeg" alt="Aglio Olio"/>
+        <br />
+        <label class="city_label" for="Aglio Olio">Aglio Olio</label>
+      </div>
+      <div class="pasta_card">
+        <img name="Arrabiata" class="city" src="images/vegetarian-pasta-arrabiata.jpeg" alt="Arrabiata"/>
+        <br />
+        <label class="city_label" for="Arrabiata">Arrabiata</label>
+      </div>
+      <div class="pasta_card">
+        <img name="Ravioli Pasta" class="city" src="images/Ravioli_pasta.jpeg" alt="Ravioli Pasta"/>
+        <br />
+        <label class="city_label" for="Ravioli Pasta">Ravioli Pasta</label>
+      </div>
+    </div>
+    <div class="table-container">
+      <p>Price List</p>
+      <table>
+        <tr>
+          <th>Pastas</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Aglio Olio</td>
+          <td>$16</td>
+        </tr>      
+        <tr>
+          <td>Arrabiata</td>
+          <td>$18</td>
+        </tr>
+        <tr>
+          <td>Ravioli Pasta</td>
+          <td>$20</td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      &copy; <em id="date"></em>THE KITCHEN PARTY 2022
+    </footer>
+  </div>
+</body>
+</html>
